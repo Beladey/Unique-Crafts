@@ -1,0 +1,8 @@
+ {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "A305 21st Key",
+        "price": 0.99,
+        "image": { "fields": { "file": { "url": "./images/product-10.jpg" } } }
+      }
+    },

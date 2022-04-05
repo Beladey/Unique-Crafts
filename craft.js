@@ -210,10 +210,30 @@ document.addEventListener( "DOMContentLoaded", e => {
   ui.setupAPP();
  // get all products
  products.getProducts().then( products =>{
- ui.displayProducts( products);
+   ui.displayProducts( products );
+   const imgCont = document.querySelectorAll( ".img-container" )
+
+imgCont.forEach( m => {
+  m.addEventListener( "click", e => {
+    const bagBtn = document.querySelectorAll( ".bag-btn" );
+    bagBtn.forEach( b => {
+      if ( b.style.transform === "translateX(100%)" ) {
+        b.style.transform = "translateX(0)"
+      } else {
+    b.style.transform = "translateX(100%)"
+     }
+    })
+  });
+})
+
   Storage.saveProducts( products );
  } ).then( () => {
    ui.getBagButtons();
    ui.cartLogic()
 });
-});
+} );
+
+
+
+
+

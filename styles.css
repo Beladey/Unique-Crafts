@@ -119,12 +119,12 @@ body {
 }
 .bag-btn {
   position: absolute;
-  top: 92%;
+  top: 75%;
   right: 0;
   background: var(--primaryColor);
   border: none;
   text-transform: uppercase;
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   letter-spacing: var(--mainSpacing);
   font-weight: bold;
   transition: var(--mainTransition);
@@ -138,9 +138,9 @@ body {
 .fa-shopping-cart {
   margin-right: 0.5rem;
 }
-.img-container:hover .bag-btn {
+/* .img-container:hover .bag-btn {
   transform: translateX(0);
-}
+} */
 .product-img {
   display: block;
   width: 100%;

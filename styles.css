@@ -154,15 +154,18 @@ body {
   cursor: pointer;
   transition: var(--mainTransition);
 }
-.img-container:hover {
+.ximg-container:hover {
   transform: scale(1.5);
+ place-items: center;
   z-index: 1;
 }
-.img-container:hover .products-center{
-grid-template-columns: repeat(1, 1fr);
-}
+
 .img-container:hover .bag-btn {
   opacity: 1;
+  transform: translateX(0);
+}
+.img-container:hover .img-container {
+  transform: scale(1.5);
 }
 .img-container:hover .product-img {
   opacity: 1;

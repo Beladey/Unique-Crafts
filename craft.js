@@ -214,7 +214,7 @@ document.addEventListener( "DOMContentLoaded", e => {
    ui.displayProducts( products );
    const imgCont = document.querySelectorAll( ".img-container" )
 
-imgCont.forEach( m => {
+/* imgCont.forEach( m => {
   m.addEventListener( "click", e => {
     const bagBtn = document.querySelectorAll( ".bag-btn" );
     bagBtn.forEach( b => {
@@ -225,7 +225,7 @@ imgCont.forEach( m => {
      }
     })
   });
-})
+}) */
 
   Storage.saveProducts( products );
  } ).then( () => {

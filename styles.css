@@ -163,16 +163,16 @@ color: var(--mainWhite);
   transition: var(--mainTransition);
   object-fit: cover;
 }
-.product:hover {
-  transform: scale(1.4);
+.img-container:hover {
+  transform: scale(1.5);
  place-items: center;
   z-index: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 9rem;
+
 /*   position: fixed;
   inset: 0;
   margin: auto; */
 }
-
 
 .img-container:hover .bag-btn {
   opacity: 1;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
   --primaryColor: #f09d51;
   --mainWhite: #fff;
@@ -29,7 +30,10 @@ body {
   background: rgb(231, 226, 221);
   z-index: 1;
 /*   background: no-repeat url("./images/naji.jpg"); */
-
+}
+.naji-icon{
+  position: relative;
+  bottom: 2rem;
 }
 .nav-links{
   display:flex;
@@ -53,7 +57,7 @@ body {
 }
 .cart-items {
     position: absolute;
-    top: 9px;
+    /* top: 9px; */
     right: 14px;
     background: var(--primaryColor);
     padding: 1rem 2rem;
@@ -74,10 +78,10 @@ body {
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
-  padding: 2rem;
+  padding:3rem 0;
 }
 .banner-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 3rem;
@@ -111,12 +115,12 @@ body {
   letter-spacing: var(--mainSpacing);
 }
 .products-center {
-  width: 90vw;
+  width: 50vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
 }
@@ -127,21 +131,24 @@ body {
 }
 .bag-btn {
   position: absolute;
-  top: 75%;
+  top: 0;
   right: 0;
+  background-color: transparent;
   background: var(--primaryColor);
   border: none;
   text-transform: uppercase;
-  padding: 1rem 3rem;
-  letter-spacing: var(--mainSpacing);
-  font-weight: bold;
+  padding: .3rem 2rem;
+ /*  letter-spacing: var(--mainSpacing);
+  font-weight: bold; */
   transition: var(--mainTransition);
   transform: translateX(101%);
   cursor: pointer;
+color: var(--mainWhite);
 }
 
 .bag-btn:hover {
   color: var(--mainWhite);
+  background: var(--primaryColor);
 }
 .fa-shopping-cart {
   margin-right: 0.5rem;
@@ -153,12 +160,17 @@ body {
   /* min-height: 12rem; */
   cursor: pointer;
   transition: var(--mainTransition);
+  object-fit: cover;
 }
-.ximg-container:hover {
-  transform: scale(1.5);
+.img-container:hover {
+  transform: scale(1.4);
  place-items: center;
   z-index: 1;
+/*   position: fixed;
+  inset: 0;
+  margin: auto; */
 }
+
 
 .img-container:hover .bag-btn {
   opacity: 1;
@@ -169,6 +181,9 @@ body {
 }
 .img-container:hover .product-img {
   opacity: 1;
+
+  place-items: center;
+  z-index: 1;
 }
 
 .product h3 {
@@ -219,10 +234,6 @@ body {
   visibility: visible;
 }
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -291,7 +302,6 @@ a:hover {
     display: block;
     width: 94%;
   }
-
 }
 /* end of menu */
 
@@ -305,6 +315,7 @@ a:hover {
     width: 30vw;
     min-width: 450px;
   }
+
 }
 
 .close-cart {
@@ -378,10 +389,6 @@ footer {
 
 /*  */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
-
-
-
 body.hidden-scrolling {
   overflow-y: hidden;
 }
@@ -410,8 +417,22 @@ a {
 
 .header .menu>.menu-item {
   display: inline-block;
-  margin: 15px;
+  margin: 30px;
   position: relative;
+}
+.header .menu>.menu-item:first-child{
+  top:-30px;
+}
+.header .menu>.menu-item::after{
+    content: "";
+    position: relative;
+    bottom: 30px;
+    right: 50%;
+    border-right: solid 2px #DC9814;
+    color: #DC9814;
+}
+.header .menu>.menu-item:first-child::after{
+  border-right: none;
 }
 
 .header .menu>.menu-item>a {
@@ -553,7 +574,6 @@ right: 0;
   justify-content: center;
   font-size: 2rem;
 }
-
 .header .close-nav-menu img {
   width: 5rem;
 }
@@ -581,9 +601,6 @@ right: 0;
   background-size: cover;
 }
 /* socil media */
-
-
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 a,
 a:hover {
@@ -707,5 +724,9 @@ margin-left: -18rem;
   .header .close-nav-menu,
   .header .open-nav-menu {
     display: flex;
+  }
+  .nav-menu:hover {
+    color: #DC9814;
+    cursor: pointer;
   }
 }

@@ -63,11 +63,11 @@ class UI {
    let inCart = cart.find( item => item.id === id );
    if (inCart) {
     button.textContent = "In Cart";
-    button.disabled = true;
+    //button.disabled = true;
    } 
     button.addEventListener( "click", e => {
      e.target.textContent = "In Cart";
-     e.target.disabled = true;
+    // e.target.disabled = true;
      // get product from products
      let cartItem = { ...Storage.getProduct( id ), amount: 1 };
      // add product to cart 
@@ -258,6 +258,7 @@ keys.addEventListener( "click", e => {
   mediaSize = 991;
 
   openNavMenu.addEventListener("click", toggleNav);
+  navMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);
   // close the navMenu by clicking outside
   menuOverlay.addEventListener("click", toggleNav);

@@ -258,7 +258,6 @@ keys.addEventListener( "click", e => {
   mediaSize = 991;
 
   openNavMenu.addEventListener("click", toggleNav);
-  navMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);
   // close the navMenu by clicking outside
   menuOverlay.addEventListener("click", toggleNav);

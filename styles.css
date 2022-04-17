@@ -135,6 +135,7 @@ body {
   right: 0;
   background-color: transparent;
   background: var(--primaryColor);
+  background-color: #f0915173;
   border: none;
   text-transform: uppercase;
   padding: .3rem 2rem;
@@ -162,10 +163,11 @@ color: var(--mainWhite);
   transition: var(--mainTransition);
   object-fit: cover;
 }
-.img-container:hover {
+.product:hover {
   transform: scale(1.4);
  place-items: center;
   z-index: 1;
+  margin-bottom: 2rem;
 /*   position: fixed;
   inset: 0;
   margin: auto; */

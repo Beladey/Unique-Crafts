@@ -5,7 +5,9 @@
       "fields": {
         "title": "A478 Tongan 21st Key",
         "price": 10.99,
-        "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/B927-1-scaled.jpg" }}},
+        "image2": { "fields": { "file": { "url": "./images/B927-2-scaled.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/B927-3-scaled.jpg" }}}
       }
     },
     {
@@ -13,7 +15,9 @@
       "fields": {
         "title": "A511 Musical Drum set Birthday",
         "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-5.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-6.jpg" }}}
       }
     },
     {
@@ -21,7 +25,9 @@
       "fields": {
         "title": "A552 Samoan 21st Key",
         "price": 12.99,
-        "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } },
+                "image2": { "fields": { "file": { "url": "./images/product-8.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-9.jpg" }}}
       }
     },
     {
@@ -29,7 +35,9 @@
       "fields": {
         "title": "A572 Cook Island 21st key",
         "price": 22.99,
-        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
     {
@@ -37,7 +45,9 @@
       "fields": {
         "title": "191045 Tongan 21st Key",
         "price": 88.99,
-        "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
     {
@@ -45,7 +55,9 @@
       "fields": {
         "title": "A478 Tongan 21st Key",
         "price": 32.99,
-        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } },
+         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
     {
@@ -53,7 +65,9 @@
       "fields": {
         "title": "A613 Niuean Samoan 21st Key",
         "price": 45.99,
-        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
     {
@@ -61,7 +75,9 @@
       "fields": {
         "title": "A478 Tongan 21st Key",
         "price": 33.99,
-        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
         {
@@ -69,7 +85,9 @@
       "fields": {
         "title": "A552 Samoan 21st Key",
         "price": 3.99,
-        "image": { "fields": { "file": { "url": "./images/product-9.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-9.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
          {
@@ -77,7 +95,9 @@
       "fields": {
         "title": "A511 Musical Drum set Birthday design",
         "price": 0.99,
-        "image": { "fields": { "file": { "url": "./images/product-11.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-11.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
          {
@@ -85,7 +105,9 @@
       "fields": {
         "title": "191045 Tongan 21st Key",
         "price": 99.99,
-        "image": { "fields": { "file": { "url": "./images/product-13.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-13.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
          {
@@ -93,7 +115,9 @@
       "fields": {
         "title": "A415 Cook Island Maori 21st Key",
         "price": 199.99,
-        "image": { "fields": { "file": { "url": "./images/product-14.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-14.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
          {
@@ -101,7 +125,9 @@
       "fields": {
         "title": "A524 Cook Island Guitar 21st Key",
         "price": 524,
-        "image": { "fields": { "file": { "url": "./images/product-15.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-15.jpg" } } },
+                "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     },
          {
@@ -109,7 +135,9 @@
       "fields": {
         "title": "A632 Samoan 21st Key",
         "price": 524,
-        "image": { "fields": { "file": { "url": "./images/product-17.jpg" } } }
+        "image": { "fields": { "file": { "url": "./images/product-17.jpg" } } },
+        "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/product-2.jpg" }}}
       }
     }
   ]

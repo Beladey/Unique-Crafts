@@ -7,6 +7,7 @@ const cartItems = document.querySelector( ".cart-items" )
 const cartTotal = document.querySelector( ".cart-total" )
 const cartContent = document.querySelector( ".cart-content" )
 const productsDOM = document.querySelector( ".products-center" )
+let currentImg = 1;
 // cart
 let cart = [];
 // buttons
@@ -18,11 +19,13 @@ try {
  let result = await fetch( 'products.json' );
  let data = await result.json();
  let products = data.items;
- products = products.map( item => {
+  products = products.map( item => {
   const { title, price } = item.fields;
   const { id } = item.sys
   const image = item.fields.image.fields.file.url;
-  return {title,price,id,image}
+  const image2 = item.fields.image2.fields.file.url;
+  const image3 = item.fields.image3.fields.file.url;
+  return {title,price,id,image,image2,image3}
  } )
  return products
 } catch (error) {
@@ -39,8 +42,15 @@ class UI {
    <!-- sigal product -->
         <artical class="product">
           <div class="img-container">
-            <img src=${product.image} 
+            <img src=${product.image}
             alt="product" class="product-img">
+            <img src=${product.image2} 
+            alt="product" class="product-img">
+            <img src=${product.image3} 
+            alt="product" class="product-img">
+                <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+             <i class="fa fa-search"></i>
             <button class="bag-btn" data-id=${product.id}>
               <span class="material-icons"> shopping_cart </span>
               <!-- <i class="fad fa-shopping-cart"></i> -->
@@ -126,6 +136,7 @@ arrow_drop_down</span>
     this.populateCart( cart );
     cartBtn.addEventListener( "click", this.showCart );
     cartItems.addEventListener( "click", this.showCart );
+   // document.querySelector(".fa-cart-shopping").addEventListener( "click", this.showCart );
     closeCartBtn.addEventListener("click",this.hideCart);
   }
   populateCart( cart ) {
@@ -226,11 +237,14 @@ document.addEventListener( "DOMContentLoaded", e => {
     })
   });
 }) */
-
+   activeImg()
+   document.querySelectorAll( ".fa-solid" ).forEach(m=> m.addEventListener("click", actIndImg))
+   document.querySelectorAll( ".fa-search" ).forEach(s=> s.addEventListener("click", rezizeImg))
   Storage.saveProducts( products );
  } ).then( () => {
    ui.getBagButtons();
    ui.cartLogic()
+   
 });
 } );
 /* 
@@ -316,3 +330,31 @@ keys.addEventListener( "click", e => {
 })();
 
 
+function activeImg() {
+  const imgeContainer = Array.from( document.querySelectorAll( ".img-container" ) )
+  imgeContainer.forEach( container => {
+    container.querySelector( ".product-img" ).classList.add( "active" )
+})
+}
+
+ function actIndImg(e) {
+  const imgeContainer = Array.from( document.querySelectorAll( ".img-container" ) )
+  if ( e.target.classList.contains("fa-solid") ) {
+    imgeContainer.forEach(container => {
+   const imgs = Array.from( container.querySelectorAll( ".img-container .product-img" ) );
+    } )
+   }
+   const sinIm = e.target.parentElement.querySelectorAll( ".product-img" )[currentImg];
+   e.target.parentElement.querySelectorAll( ".product-img" ).forEach(m=> m.classList.remove( "active" ) )
+   sinIm.classList.add( "active" ) 
+  if ( currentImg ==2 ) {
+  currentImg = -1
+   }
+  currentImg++
+}
+
+function rezizeImg(e) {
+  const sinIm = e.target.parentElement.querySelectorAll( ".product-img" )[currentImg-1];
+  sinIm.parentElement.classList.toggle("big-size" )
+  sinIm.classList.toggle("big-size" ) 
+}

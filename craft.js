@@ -48,15 +48,16 @@ class UI {
             alt="product" class="product-img">
             <img src=${product.image3} 
             alt="product" class="product-img">
-                <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-left"></i>
             <i class="fa-solid fa-arrow-right"></i>
-             <i class="fa fa-search"></i>
-            <button class="bag-btn" data-id=${product.id}>
-              <span class="material-icons"> shopping_cart </span>
-              <!-- <i class="fad fa-shopping-cart"></i> -->
-              add to cart
-            </button>
           </div>
+          <h3>
+           <i class="fa fa-search"></i>
+          </h3>
+            <h3> <button class="bag-btn" data-id=${product.id}>
+              <span class="material-icons"> shopping_cart </span>
+              add to cart
+            </button></h3>
           <h3>${product.title}</h3>
           <h4>$${product.price}</h4>
         </artical>
@@ -354,7 +355,9 @@ function activeImg() {
 }
 
 function rezizeImg(e) {
-  const sinIm = e.target.parentElement.querySelectorAll( ".product-img" )[currentImg-1];
-  sinIm.parentElement.classList.toggle("big-size" )
-  sinIm.classList.toggle("big-size" ) 
+  const sinIm = e.target.closest( ".product" ).querySelector( ".img-container" );
+  if ( !sinIm.classList.contains( "big-size" ) ) {
+  document.querySelectorAll( ".img-container" ).forEach(m=> m.classList.remove("big-size"))
+}
+  sinIm.classList.toggle("big-size" )
 }

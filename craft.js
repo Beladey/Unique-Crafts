@@ -60,7 +60,63 @@ class UI {
             </button></h3>
           <h3>${product.title}</h3>
           <h4>$${product.price}</h4>
+     <p class="enquery">Equery about this product</p>
+    <div class="contact-container ">
+        <form
+          id="contact"
+          name="Contact us"
+          method="post"
+          data-netlify="true"
+          action="received.html"
+        >
+        
+          <fieldset>
+            <input
+              placeholder="Name (required)"
+              type="text"
+              name="Name"
+              tabindex="1"
+              required
+              autofocus
+            />
+          </fieldset>
+          <fieldset>
+            <input
+              placeholder="Email address (required)"
+              name="Email address"
+              type="email"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <input placeholder="Phone" name="Phone" type="tel" tabindex="3" />
+          </fieldset>
+          <fieldset>
+            <input placeholder="${product.title}" type="tel" tabindex="4" />
+          </fieldset>
+          <fieldset>
+            <textarea
+              placeholder="The question...."
+              tabindex="5"
+              name="The question"
+              required
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              data-submit="...Send"
+            >
+              Send
+            </button>
+          </fieldset>
+        </form>
+      </div>
         </artical>
+        
        <!-- end of sigal product -->
    `
   } );
@@ -240,7 +296,9 @@ document.addEventListener( "DOMContentLoaded", e => {
 }) */
    activeImg()
    document.querySelectorAll( ".fa-solid" ).forEach(m=> m.addEventListener("click", actIndImg))
-   document.querySelectorAll( ".fa-search" ).forEach(s=> s.addEventListener("click", rezizeImg))
+   document.querySelectorAll( ".fa-search" ).forEach( s => s.addEventListener( "click", rezizeImg ) )
+   document.querySelectorAll( ".enquery" ).forEach(el=> el.addEventListener( "click", enqProd ))
+     
   Storage.saveProducts( products );
  } ).then( () => {
    ui.getBagButtons();
@@ -356,8 +414,17 @@ function activeImg() {
 
 function rezizeImg(e) {
   const sinIm = e.target.closest( ".product" ).querySelector( ".img-container" );
+ // const copy = sinIm.cloneNode(true) ;
+  const copy = sinIm;
   if ( !sinIm.classList.contains( "big-size" ) ) {
   document.querySelectorAll( ".img-container" ).forEach(m=> m.classList.remove("big-size"))
 }
-  sinIm.classList.toggle("big-size" )
+  sinIm.classList.toggle( "big-size" );
 }
+
+function enqProd( e ) {
+  if ( e.target.classList.contains( "enquery" ) ) {
+    e.target.nextElementSibling.classList.toggle( "show" );
+  }
+}
+

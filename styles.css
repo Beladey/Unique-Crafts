@@ -151,11 +151,14 @@ body {
   height: 13rem;
   width: 96%;
 }
+.img-container.bigger{
+  width: 56vw;
+  height: 40vh;
+}
 .bag-btn {
   background-color: transparent; 
   background-color: #f0915173;
   background: var(--primaryColor);
-
   border: none;
   text-transform: uppercase;
   transition: var(--mainTransition);
@@ -188,18 +191,16 @@ body {
       position: absolute;
       aspect-ratio: 16/9;
       object-position: center;
-  
 }
 .product-img.active {
   opacity: 1;
 }
 
 .img-container.big-size{
-/* height: 90vh;
-width: 35vw; */
-z-index: 3;
+  z-index: 3;
   transform: scale(1.5);
 }
+
 .img-container:hover .bag-btn {
   opacity: 1;
   transform: translateX(0);
@@ -504,10 +505,11 @@ color: #fff;
 position: absolute;
 right: 10%;
 float:right;
-top: 50%;
+top: 50%; 
 font-size: 30px;
 z-index: 2;
 cursor: pointer;
+text-align: center;
 }
 .fa-arrow-left{
 color: #fff;
@@ -665,7 +667,9 @@ margin-left: -18rem;
   background-color: #000;
   border: 1px solid #000;
 }
-
+.hidden{
+visibility: hidden;
+}
 /* responsive */
 @media(min-width: 992px) {
   .header .menu>.menu-item-has-children:hover>.sub-menu {
@@ -782,15 +786,64 @@ margin-left: -18rem;
   }
 }
 
-/* @media screen and (min-width:1770px) and (max-width:1950px){
-  .bag-btn{
-    top: 5%;
-  }
+
+.modal{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition:200ms ease-in-out ;
+  border: 1px solid #000;
+  border-radius: 10px;
+  z-index: 6;
+  background: #fff;
+  max-width: 80%;
+}
+.modal.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header{
+  padding: 1rem 1.5 rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
 }
 
-@media screen and (max-width:999px){
-  .bag-btn{
-    top: 20%;
-  }
-} */
+.modal-header .title{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
 
+.modal-header .close.button{
+cursor: pointer;
+border: none;
+outline: none;
+background: none;
+font-size:1.25rem;
+font-weight: bold;
+}
+
+.modal-body{
+  padding: 10px 15px;
+}
+
+#ovelay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  pointer-events: all;
+}
+
+.modal-btn{
+  color: #fff;
+  font-size: 2rem;
+}

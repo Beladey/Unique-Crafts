@@ -414,8 +414,6 @@ function activeImg() {
 
 function rezizeImg(e) {
   const sinIm = e.target.closest( ".product" ).querySelector( ".img-container" );
- // const copy = sinIm.cloneNode(true) ;
-  const copy = sinIm;
   if ( !sinIm.classList.contains( "big-size" ) ) {
   document.querySelectorAll( ".img-container" ).forEach(m=> m.classList.remove("big-size"))
 }
@@ -423,6 +421,9 @@ function rezizeImg(e) {
 }
 
 function enqProd( e ) {
+  if (!e.target.nextElementSibling.classList.contains( "show" ) ) {
+  document.querySelectorAll( ".enquery" ).forEach(m=> m.nextElementSibling.classList.remove("show"))
+}
   if ( e.target.classList.contains( "enquery" ) ) {
     e.target.nextElementSibling.classList.toggle( "show" );
   }

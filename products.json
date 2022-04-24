@@ -3,7 +3,7 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "A478 Tongan 21st Key",
+        "title": "a478 tongan 21st key",
         "price": 10.99,
         "image": { "fields": { "file": { "url": "./images/B927-1-scaled.jpg" }}},
         "image2": { "fields": { "file": { "url": "./images/B927-2-scaled.jpg" }}},
@@ -13,7 +13,7 @@
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "A511 Musical Drum set Birthday",
+        "title": "a511 musical drum set birthday",
         "price": 12.99,
         "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-5.jpg" }}},
@@ -23,7 +23,7 @@
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "A552 Samoan 21st Key",
+        "title": "a552 samoan 21st key",
         "price": 12.99,
         "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } },
                 "image2": { "fields": { "file": { "url": "./images/product-8.jpg" }}},
@@ -33,7 +33,7 @@
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "A572 Cook Island 21st key",
+        "title": "a572 cook island 21st key",
         "price": 22.99,
         "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -43,7 +43,7 @@
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "191045 Tongan 21st Key",
+        "title": "191045 tongan 21st key",
         "price": 88.99,
         "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -53,7 +53,7 @@
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "A478 Tongan 21st Key",
+        "title": "a478 tongan 21st key",
         "price": 32.99,
         "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } },
          "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -63,7 +63,7 @@
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "A613 Niuean Samoan 21st Key",
+        "title": "a613 niuean samoan 21st key",
         "price": 45.99,
         "image": { "fields": { "file": { "url": "./images/product-7.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -73,7 +73,7 @@
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "A478 Tongan 21st Key",
+        "title": "a478 tongan 21st key",
         "price": 33.99,
         "image": { "fields": { "file": { "url": "./images/product-8.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -83,7 +83,7 @@
         {
       "sys": { "id": "9" },
       "fields": {
-        "title": "A552 Samoan 21st Key",
+        "title": "a552 samoan 21st key",
         "price": 3.99,
         "image": { "fields": { "file": { "url": "./images/product-9.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -93,7 +93,7 @@
          {
       "sys": { "id": "11" },
       "fields": {
-        "title": "A511 Musical Drum set Birthday design",
+        "title": "a511 musical drum set birthday design",
         "price": 0.99,
         "image": { "fields": { "file": { "url": "./images/product-11.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -103,7 +103,7 @@
          {
       "sys": { "id": "13" },
       "fields": {
-        "title": "191045 Tongan 21st Key",
+        "title": "191045 tongan 21st key",
         "price": 99.99,
         "image": { "fields": { "file": { "url": "./images/product-13.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -113,7 +113,7 @@
          {
       "sys": { "id": "14" },
       "fields": {
-        "title": "A415 Cook Island Maori 21st Key",
+        "title": "a415 cook island maori 21st key",
         "price": 199.99,
         "image": { "fields": { "file": { "url": "./images/product-14.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -123,7 +123,7 @@
          {
       "sys": { "id": "15" },
       "fields": {
-        "title": "A524 Cook Island Guitar 21st Key",
+        "title": "a524 cook island guitar 21st key",
         "price": 524,
         "image": { "fields": { "file": { "url": "./images/product-15.jpg" } } },
                 "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},
@@ -133,7 +133,7 @@
          {
       "sys": { "id": "17" },
       "fields": {
-        "title": "A632 Samoan 21st Key",
+        "title": "a632 samoan 21st key",
         "price": 524,
         "image": { "fields": { "file": { "url": "./images/product-17.jpg" } } },
         "image2": { "fields": { "file": { "url": "./images/product-2.jpg" }}},

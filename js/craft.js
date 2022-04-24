@@ -84,9 +84,20 @@ class UI {
               required
               autofocus
             />
-          </fieldset>
           <fieldset>
-          <label for="">Date:</label>
+          <label for="">Address</Address>:</label>
+            <input
+              placeholder="Address (required)"
+              name="Address"
+              type="text"
+              tabindex="2"
+              required
+            />
+          </fieldset>
+
+             </fieldset>
+          <fieldset>
+          <label for="">The date youe need it:</label>
             <input
               placeholder="Date required (required)"
               name="Date required"
@@ -96,13 +107,49 @@ class UI {
             />
           </fieldset>
           <fieldset>
-          <label for="">Address</Address>:</label>
+          <label for="">Celebrat date:</label>
+          <br>
             <input
-              placeholder="Address (required)"
-              name="Address"
-              type="text"
+              placeholder="Date required (required)"
+              name="Date required"
+              type="date"
               tabindex="2"
               required
+            />
+          </fieldset>
+          <fieldset>
+          <label for="">Male:</label>
+            <input
+              placeholder="gendar"
+              name="gendar"
+              type="radio"
+              tabindex="2"
+            />
+            <br>
+             <label for="">Female:</label>
+            <input
+              placeholder="gendar"
+              name="gendar"
+              type="radio"
+              tabindex="2"
+            />
+          </fieldset>
+          <fieldset>
+          <label for="">Background color:</label>
+            <input
+              placeholder="Background color"
+              name="color"
+              type="color"
+              tabindex="2"
+            />
+          </fieldset>
+          <fieldset>
+          <label for="">Name on the key:</label>
+            <input
+              placeholder="Name on the key"
+              name="Name on the key"
+              type="text"
+              tabindex="2"
             />
           </fieldset>
           <fieldset>
@@ -117,6 +164,31 @@ class UI {
           <fieldset>
             <input placeholder="Phone" name="Phone" type="tel" tabindex="3" />
           </fieldset>
+ <fieldset>
+          <label for="">There are options below. Please tell us which one do you prefer? </label>
+          <br>
+          <label for="">Hamilton from the shop</label>
+         
+            <input
+              placeholder="Hamilton from the shop"
+              name="gendar"
+              type="radio"
+              tabindex="2"
+            />
+            <br>
+             <label for="">Auckland ( Fridays only ) estimated time - 6.30pm to 7pm 
+Front of Ray white 
+Address: 75 Hingaia Road, Karaka 2580:</label>
+            <input
+              placeholder="gendar"
+              name="gendar"
+              type="radio"
+              tabindex="2"
+            />
+          </fieldset>
+
+
+
           <fieldset>
             <input
             placeholder="${product.title}" 

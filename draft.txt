@@ -1,8 +1,10 @@
- {
-      "sys": { "id": "10" },
+{
+      "sys": { "id": "1" },
       "fields": {
-        "title": "A305 21st Key",
-        "price": 0.99,
-        "image": { "fields": { "file": { "url": "./images/product-10.jpg" } } }
+        "title": "a478 tongan 21st key",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/B927-1-scaled.jpg" }}},
+        "image2": { "fields": { "file": { "url": "./images/B927-2-scaled.jpg" }}},
+        "image3": { "fields": { "file": { "url": "./images/B927-3-scaled.jpg" }}}
       }
     },

@@ -403,6 +403,14 @@ search.addEventListener( "input", e => {
   loadContent()
 });
 
+function copyToSearch(con) {
+  search.value = con;
+  loadContent()
+}
+function clearSreach() {
+  search.value = null
+   loadContent()
+}
 
 
 (() =>{

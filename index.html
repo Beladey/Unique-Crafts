@@ -50,10 +50,10 @@
                   <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">LED Keys</a></li>
-                  <li class="menu-item"><a href="#">Maori</a></li>
-                  <li class="menu-item"><a href="#">Cook Island</a></li>
-                  <li class="menu-item"><a href="#">Twin keys</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">LED Keys</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Maori</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Cook Island</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Twin keys</a></li>
                 </ul>
               </li>
               <li class="menu-item menu-item-has-children">
@@ -63,8 +63,8 @@
                   <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">Birthday Plaques</a></li>
-                  <li class="menu-item"><a href="#">Annual Plaques</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Birthday Plaques</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Annual Plaques</a></li>
                 </ul>
               </li>
               <li class="menu-item menu-item-has-children">
@@ -73,12 +73,12 @@
                   <i class="fa fa-caret-down"></i>
                 </a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">Craved Name</a></li>
-                  <li class="menu-item"><a href="#">Cake Topper</a></li>
-                  <li class="menu-item"><a href="#">Wedding</a></li>
-                  <li class="menu-item"><a href="#">Hoops</a></li>
-                  <li class="menu-item"><a href="#">Guest Book</a></li>
-                  <li class="menu-item"><a href="#">Hoops</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Craved Name</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Cake Topper</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Wedding</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Hoops</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Guest Book</a></li>
+                  <li class="menu-item"><a onclick="copyToSearch(this.textContent)">Hoops</a></li>
                 </ul>
               </li>
               <li class="menu-item"><a href="#">Good Deals</a>
@@ -130,7 +130,7 @@
       <div class="cart-items">0
   </div> 
   <div>
-    <input autofocus placeholder="Search products ..." type="search" id="search" class="search" >
+    <input autofocus placeholder="Search products ..." type="search" id="search" class="search" ><button class="search-btn" onclick="clearSreach()">Show all</button>
   </div>
 <!--   <span>
   <i class="fa-solid fa-cart-shopping"></i>
